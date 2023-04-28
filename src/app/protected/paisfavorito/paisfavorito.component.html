@@ -1,0 +1,14 @@
+<table class="table table-hover ">
+    <thead>
+        <th> <h1> Mis Favoritos </h1> </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pais of Favoritos" class="animate__animated animate__backInRight">
+            <td>{{pais}}
+            </td>
+        </tr> 
+    </tbody>
+    <br>
+    <br>
+    <button class="btn btn-danger" [routerLink]="['/paises']"> regresar </button>
+</table>
